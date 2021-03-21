@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+}
+body{
+    background-image: url("img/sfondo.jpg");
+    background-attachment: fixed;
+}
+section>h1{
+    font-size: 40pt;
+    color: blue;
+    font-style: oblique;
+    text-align: center;
+    padding: 30px;
+}
+body>section{
+    width: 1200px;
+    margin: auto;
+    overflow: auto;
+    background-color: #FF6;
+}
+#orologio{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+    background-image: radial-gradient(circle, #33E 0%,#DDE 100%);
+    box-shadow: 4px 4px 4px #222,
+                8px 8px 4px #DDE;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#lancetta{
+    height: 580px;
+    width: 4px;
+    position: relative;
+    top:10px;
+    left: 300px;
+    animation: orologio 10s infinite;
+}
+#lancetta>div{
+    background-color: black;
+    width: 4px;
+    height: 290px;
+}
+@-webkit-keyframes orologio {
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(90deg)}
+    75%{transform: rotate(180deg)}
+    100%{transform: rotate(270deg)}
+}
+.ora{
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    font-size: 48pt;
+}
+#dodici{
+    position: absolute;
+    left:250px;
+    top: 0;
+}
+#sei{
+    position: absolute;
+    left:250px;
+    top: 500px;
+}
+#tre{
+    position: absolute;
+    left:0px;
+    top: 250px;
+}
+#nove{
+    position: absolute;
+    left: 500px;
+    top: 250px;
+}
+#appuntamenti{
+    width: 800px;
+    padding: 15px;
+    border-radius: 30px;
+    background-image: radial-gradient(circle, #DDE 0%,#33E 100%);
+    box-shadow: 4px 4px 4px #222,
+    8px 8px 4px #DDE;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#appuntamenti>h2{
+    font-size: 20pt;
+    font-weight: bold;
+    color: darkblue;
+    letter-spacing: -1px;
+}
+ul{
+    list-style: none;
+    overflow: auto;
+    margin: 0 auto;
+    width: 600px;
+}
+li{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: yellow;
+    background-image: radial-gradient(circle, #33E 0%,#DDE 100%);
+    border-radius: 5px;
+    border: 1px black;
+    box-shadow: 3px 3px 4px #000;
+    float: left;
+}
